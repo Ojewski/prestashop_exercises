@@ -1,0 +1,178 @@
+/******************************************************************************
+                                                Home Page Slider
+*******************************************************************************/
+#homepage-slider {
+  padding-left: 295px;
+  padding-right: 0;
+  margin-bottom: 14px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  float: left;
+  /*****************************************************************************
+                                                  BXSlider Styles
+  ********************************************************************************/
+  /*    .bx-wrapper {
+          a {
+              display: block;
+          }
+          img {
+              height: auto;
+          }
+          .bx-viewport {
+              width: 100%;
+              direction: ltr!important;
+          }
+          .bx-pager.bx-default-pager a {
+              background: #666;
+          }
+          .bx-controls-direction a {
+              top: auto;
+              margin-top: 0px;
+              font-size: 1em;
+              bottom: 10px;
+              outline: 0;
+              width: 52px;
+              height: 52px;
+              text-indent: -9999px;
+              z-index: 9999;
+              border: 2px solid $light-border-color;
+              line-height: 18px;
+              &:before {
+                  height: 48px;
+                  width: 48px;
+                  display: block;
+                  background: $light-background;
+                  content: ".";
+                  opacity: 0.14;
+                  text-indent: -9999px;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  z-index: 1;
+              }
+              &:after {
+                  display: block;
+                  width: 48px;
+                  height: 48px;
+                  color: $light-text-color;
+                  text-indent: 0;
+                  text-align: center;
+                  font-size: 21px;
+                  font-family: $font-icon;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 2;
+                  padding: 16px 0 0 0;
+              }
+              &:hover {
+                  &:before {
+                      background: $dark-background;
+                      opacity: 0.83;
+                  }
+              }
+          }
+          .bx-prev {
+              right: 60px;
+              left: auto;
+              &:after {
+                  content: "\f053";
+              }
+          }
+          .bx-next {
+              &:after {
+                  content: "\f054";
+              }
+          }
+      }
+  */
+}
+@media (max-width: 767px) {
+  #homepage-slider {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+}
+#homepage-slider #homeslider {
+  margin: 0 auto;
+  padding: 0;
+}
+#homepage-slider .homeslider-container {
+  position: relative;
+}
+#homepage-slider .homeslider-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#homepage-slider .homeslider-description {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  left: 40px;
+  margin: 0;
+  max-width: 456px;
+  padding: 18px 27px 5px;
+  position: absolute;
+  top: 70px;
+}
+#homepage-slider .homeslider-description h2 {
+  background: none;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  font: 700 24px "PT Sans",sans-serif;
+  margin: 0;
+  padding: 0 0 6px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+#homepage-slider .homeslider-description p {
+  color: #ffffff;
+  font: 400 15px/21px "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0 0 14px;
+}
+#homepage-slider .homeslider-description button {
+  text-transform: uppercase;
+  font: 400 15px/21px "PT Sans", sans-serif;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  #homepage-slider .homeslider-description {
+    padding: 20px;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 768px) {
+  #homepage-slider .homeslider-description {
+    padding: 30px;
+    font-size: 0.7em;
+  }
+  #homepage-slider .homeslider-description p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 480px) {
+  #homepage-slider .homeslider-description {
+    padding: 30px;
+    font-size: 0.5em;
+  }
+  #homepage-slider .homeslider-description p {
+    font-size: 1.7em;
+  }
+}
+
+   /*
+.ie8 {
+    #homepage-slider{
+        .bx-wrapper .bx-controls-direction a {
+            &:before {
+                background: $dark-background;
+            }
+        }
+     }*/
+/*}*/
